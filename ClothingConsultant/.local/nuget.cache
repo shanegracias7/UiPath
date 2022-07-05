@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wnJ+lu9DKVV0NWeJR74PMIvfoUnoVcFaPJrC+XPTtBgPMuEu6YU+Jzwmes3ZjBwIdjltgm0vEADjAaXs/2VA2A==",
+  "dgSpecHash": "1C/JD/p1hnLs8TCyLwDz1394p8iH3FItsmDFWD/B7GyQtI+TO/UK6grxFYhGNfmHz3iE7wxfMG1g+uJqscVgAA==",
   "success": true,
-  "projectFilePath": "\\\\Mac\\Home\\Documents\\UiPath\\ClothingConsultant\\.local\\",
+  "projectFilePath": "\\\\mac\\Home\\Documents\\UiPath\\ClothingConsultant\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\shanegracias\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\shanegracias\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
