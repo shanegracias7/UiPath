@@ -1,0 +1,243 @@
+<Activity
+    x:Class="Main"
+    xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+    xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+    xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+    xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+    xmlns:ui="http://schemas.uipath.com/workflow/activities"
+    mva:VisualBasic.Settings="{x:Null}"
+    sap2010:WorkflowViewState.IdRef="ActivityBuilder_1"
+    sap:VirtualizedContainerService.HintSize="824,492"
+    mc:Ignorable="sap sap2010">
+    <TextExpression.NamespacesForImplementation>
+        <scg:List x:TypeArguments="x:String" Capacity="23">
+            <x:String>System.Activities</x:String>
+            <x:String>System.Activities.Statements</x:String>
+            <x:String>System.Activities.Expressions</x:String>
+            <x:String>System.Activities.Validation</x:String>
+            <x:String>System.Activities.XamlIntegration</x:String>
+            <x:String>Microsoft.VisualBasic</x:String>
+            <x:String>Microsoft.VisualBasic.Activities</x:String>
+            <x:String>System</x:String>
+            <x:String>System.Collections</x:String>
+            <x:String>System.Collections.Generic</x:String>
+            <x:String>System.Data</x:String>
+            <x:String>System.Diagnostics</x:String>
+            <x:String>System.Drawing</x:String>
+            <x:String>System.IO</x:String>
+            <x:String>System.Linq</x:String>
+            <x:String>System.Net.Mail</x:String>
+            <x:String>System.Xml</x:String>
+            <x:String>System.Xml.Linq</x:String>
+            <x:String>UiPath.Core</x:String>
+            <x:String>UiPath.Core.Activities</x:String>
+            <x:String>System.Windows.Markup</x:String>
+            <x:String>System.Activities.DynamicUpdate</x:String>
+            <x:String>UiPath.Platform.ObjectLibrary</x:String>
+        </scg:List>
+    </TextExpression.NamespacesForImplementation>
+    <TextExpression.ReferencesForImplementation>
+        <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+            <AssemblyReference>System.Activities</AssemblyReference>
+            <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+            <AssemblyReference>mscorlib</AssemblyReference>
+            <AssemblyReference>System.Data</AssemblyReference>
+            <AssemblyReference>System</AssemblyReference>
+            <AssemblyReference>System.Drawing</AssemblyReference>
+            <AssemblyReference>System.Core</AssemblyReference>
+            <AssemblyReference>System.Xml</AssemblyReference>
+            <AssemblyReference>System.Xml.Linq</AssemblyReference>
+            <AssemblyReference>PresentationFramework</AssemblyReference>
+            <AssemblyReference>WindowsBase</AssemblyReference>
+            <AssemblyReference>PresentationCore</AssemblyReference>
+            <AssemblyReference>System.Xaml</AssemblyReference>
+            <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+            <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+            <AssemblyReference>UiPath.Platform</AssemblyReference>
+        </scg:List>
+    </TextExpression.ReferencesForImplementation>
+    <Sequence sap2010:WorkflowViewState.IdRef="Sequence_2" sap:VirtualizedContainerService.HintSize="525.6,992.8">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Name="unicornGeneratorURL">
+            <Variable.Default>
+              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="new Uri(System.IO.Path.Combine(Environment.CurrentDirectory, &quot;unicornGenerator.html&quot;), true).AbsoluteUri" />
+            </Variable.Default>
+          </Variable>
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:OpenBrowser
+            sap2010:WorkflowViewState.IdRef="OpenBrowser"
+            sap:VirtualizedContainerService.HintSize="484,900"
+            CommunicationMethod="Native"
+            DisplayName="Open Browser"
+            Url="[unicornGeneratorURL]"
+            Hidden="{x:Null}"
+            NewSession="{x:Null}"
+            Private="{x:Null}"
+            UiBrowser="{x:Null}">
+            <ui:OpenBrowser.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                        <DelegateInArgument Name="ContextTarget" x:TypeArguments="x:Object" />
+                    </ActivityAction.Argument>
+                    <Sequence
+                        sap2010:WorkflowViewState.IdRef="Sequence_1"
+                        sap:VirtualizedContainerService.HintSize="375.2,797.6"
+                        DisplayName="Do">
+                        <Sequence.Variables>
+                            <Variable Name="myUnicornName" x:TypeArguments="x:String" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                        <ui:TypeInto
+                            sap2010:WorkflowViewState.IdRef="TypeIntoName"
+                            sap:VirtualizedContainerService.HintSize="333.6,135.2"
+                            Activate="True"
+                            AlterIfDisabled="{x:Null}"
+                            ClickBeforeTyping="{x:Null}"
+                            DelayBefore="{x:Null}"
+                            DelayBetweenKeys="{x:Null}"
+                            DelayMS="{x:Null}"
+                            DisplayName="Type Into 'INPUT  txtName'"
+                            EmptyField="{x:Null}"
+                            SendWindowMessages="{x:Null}"
+                            SimulateType="{x:Null}"
+                            Text="Your name goes here">
+                            <ui:TypeInto.Target>
+                                <ui:Target
+                                    ClippingRegion="{x:Null}"
+                                    Element="{x:Null}"
+                                    Id="e6526445-641c-4bbe-921c-7a78ef03be49"
+                                    InformativeScreenshot="ff3fcde7a3556557f443d7ec4a5e7068"
+                                    Selector="&lt;webctrl tag='INPUT' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                </ui:Target>
+                            </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <ui:TypeInto
+                            sap2010:WorkflowViewState.IdRef="TypeIntoBirthMonth"
+                            sap:VirtualizedContainerService.HintSize="333.6,135.2"
+                            Activate="True"
+                            AlterIfDisabled="{x:Null}"
+                            ClickBeforeTyping="{x:Null}"
+                            DelayBefore="{x:Null}"
+                            DelayBetweenKeys="{x:Null}"
+                            DelayMS="{x:Null}"
+                            DisplayName="Type Into 'SELECT  selMonth'"
+                            EmptyField="{x:Null}"
+                            SendWindowMessages="{x:Null}"
+                            SimulateType="{x:Null}"
+                            Text="January">
+                            <ui:TypeInto.Target>
+                                <ui:Target
+                                    ClippingRegion="{x:Null}"
+                                    Element="{x:Null}"
+                                    Id="165fb22e-ad79-4267-9516-42e334a0c069"
+                                    InformativeScreenshot="9c9f5716b6cf694f078798ddd88ac8ec"
+                                    Selector="&lt;webctrl tag='SELECT' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                </ui:Target>
+                            </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <ui:Click
+                            sap2010:WorkflowViewState.IdRef="Click"
+                            sap:VirtualizedContainerService.HintSize="333.6,107.2"
+                            AlterIfDisabled="{x:Null}"
+                            ClickType="CLICK_SINGLE"
+                            DelayBefore="{x:Null}"
+                            DelayMS="{x:Null}"
+                            DisplayName="Click 'BUTTON  getNameButton'"
+                            KeyModifiers="None"
+                            MouseButton="BTN_LEFT"
+                            SendWindowMessages="{x:Null}"
+                            SimulateClick="{x:Null}">
+                            <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                            </ui:Click.CursorPosition>
+                            <ui:Click.Target>
+                                <ui:Target
+                                    ClippingRegion="{x:Null}"
+                                    Element="{x:Null}"
+                                    Id="3357bec2-65c8-403a-97a5-8c94f2c5a43f"
+                                    InformativeScreenshot="b216810e8580bb2af84ae44ff83da49f"
+                                    Selector="&lt;webctrl tag='BUTTON' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                </ui:Target>
+                            </ui:Click.Target>
+                        </ui:Click>
+                        <ui:GetValue
+                            sap2010:WorkflowViewState.IdRef="GetText"
+                            sap:VirtualizedContainerService.HintSize="333.6,107.2"
+                            ContinueOnError="{x:Null}"
+                            DisplayName="Get Text 'DIV  lblUnicornName'">
+                            <ui:GetValue.Target>
+                                <ui:Target
+                                    ClippingRegion="{x:Null}"
+                                    Element="{x:Null}"
+                                    Id="6168edf7-4e63-4e8e-a175-236d87deb5a5"
+                                    InformativeScreenshot="3b563f18e7709f573c0179813233004f"
+                                    Selector="&lt;webctrl id='lblUnicornName' tag='DIV' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                </ui:Target>
+                            </ui:GetValue.Target>
+                            <ui:GetValue.Value>
+                                <OutArgument x:TypeArguments="x:String">[myUnicornName]</OutArgument>
+                            </ui:GetValue.Value>
+                        </ui:GetValue>
+                        <ui:MessageBox
+                            sap2010:WorkflowViewState.IdRef="MessageBox"
+                            sap:VirtualizedContainerService.HintSize="333.6,60"
+                            Caption="{x:Null}"
+                            ChosenButton="{x:Null}"
+                            DisplayName="Your unicorn name Message Box">
+                            <ui:MessageBox.Text>
+                                <InArgument x:TypeArguments="x:Object">[&quot;Your unicorn name is &quot; + myUnicornName]</InArgument>
+                            </ui:MessageBox.Text>
+                        </ui:MessageBox>
+                    </Sequence>
+                </ActivityAction>
+            </ui:OpenBrowser.Body>
+            <ui:OpenBrowser.BrowserType>
+                <InArgument x:TypeArguments="ui:BrowserType">[BrowserType.IE]</InArgument>
+            </ui:OpenBrowser.BrowserType>
+        </ui:OpenBrowser>
+    </Sequence>
+</Activity>
