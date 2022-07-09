@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3TnzCfNvx6L54L3DdbggPi96kUdwzwY/qSsqGbhnO+pHfqBOqjyuhJPoK+94m3dvrsSBythXJ8oT7WQ6rE1dyw==",
+  "dgSpecHash": "PPovQVO+rfplqsB29YIiG6Dwkc6EZE+VWjcQ93NRgFRtsErS9pcGtBss4VNI0FqG2yUyR0GP31tEp7fQV9VW7g==",
   "success": true,
-  "projectFilePath": "\\\\Mac\\Home\\Documents\\UiPath\\PDF_data_scrape\\.local\\",
+  "projectFilePath": "\\\\mac\\Home\\Documents\\UiPath\\PDF_data_scrape\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\shanegracias\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\shanegracias\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",

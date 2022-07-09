@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wgj/fglKDpEWLv6VcXiZIL0CRCPKt09mHIYTvYtN73qmHhTQAAgFzrnedTQK9MIKkWCGHdr+yFY4Jht/Ww2mTw==",
+  "dgSpecHash": "g6GZVrHEsx1MbmbYFrCvfDsgAU6TF77j08fA1R3ubhT4L+b42h+cTc0fDeMLLILHZ3vh9VJowP2gsWE44GZdfg==",
   "success": true,
-  "projectFilePath": "\\\\Mac\\Home\\Documents\\UiPath\\OCR_data_scraping\\.local\\",
+  "projectFilePath": "\\\\mac\\Home\\Documents\\UiPath\\OCR_data_scraping\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\shanegracias\\.nuget\\packages\\bitmiracle.docotic.pdf\\7.5.11645\\bitmiracle.docotic.pdf.7.5.11645.nupkg.sha512",
     "C:\\Users\\shanegracias\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\bitmiracle.libtiff.net.2.4.649.nupkg.sha512",

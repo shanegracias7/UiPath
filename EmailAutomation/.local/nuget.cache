@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ds5qM/xFQBs+ppnx8weqQ4gRL9rixiJgkRVQ9Yu76w7bpxISgXdwEhrTvJCOXCjKScHwMYt7Zw1bHPs4wzXowQ==",
+  "dgSpecHash": "xC1EyA/yEOMGq2XDHXhRCDTbm0GHjoubygM6JI8Xz2C2Q2edxqnS7ZvvBOBtoJFvfpwQ9/E71P9n1dW/lCxNkw==",
   "success": true,
-  "projectFilePath": "\\\\Mac\\Home\\Documents\\UiPath\\EmailAutomation\\.local\\",
+  "projectFilePath": "\\\\mac\\Home\\Documents\\UiPath\\EmailAutomation\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\shanegracias\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\shanegracias\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
