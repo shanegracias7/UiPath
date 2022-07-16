@@ -10,7 +10,7 @@
 > This robot loops through scanned PDFs, scrapes the text from the images using OCR and exports it into a text file.
 
 # BOT 4 -  Email Automation
-> The bot send success emails once other bots finish excecution. attaches the output files as attachment.
+> The bot sends success emails once other bots finish execution. attaches the output files as attachment.
 
  
  # BOT 5 - Clothing consultant
